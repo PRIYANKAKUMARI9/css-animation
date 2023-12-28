@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    border: 5px solid rgb(238, 21, 21);
+    background-color: aquamarine;
+    box-sizing: border-box;
+    height: 200px;
+    
+}
+.box{
+    height: 100px;
+    width: 500px;
+    background-color: rgb(15, 238, 89);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 20s;
+    animation-iteration-count: 5;
+    animation-delay: 1s;
+    animation-timing-function:ease-in;
+}
+@keyframes rightMovement{
+    from{
+        top: 0;
+        left: 0;
+
+    }
+    to{
+        top: 0;
+        left: 1500px;
+
+    }
+}
+
+.container2{
+    border: 5px solid rgb(238, 21, 21);
+    background-color: rgb(170, 98, 170);
+    box-sizing: border-box;
+    height: 500px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+
+
+}
+.box2{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(238, 216, 15);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    animation-name: secondAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    animation-timing-function: cubic-bezier(0.88,-0.12, 0.17, 1);/*cubic-bezier(n,n,n,n)*/
+    /*animation-direction: alternate; *//*ye jayega fir waps aayega gayb nhi hoga*/
+
+    /*  (SHORT HAND NOTATION) @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name 
+animation: 20s linear 1s 2 infinite alternate none running leftmovement;*/
+
+
+    
+}
+@keyframes secondAnimation{
+    from{
+        top: 0;
+        right: 0;
+
+    }
+    to{
+        top: 0;
+        right: 1300px;
+
+    }
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(15, 67, 238);
+    border: 2px solid black;
+    border-radius: 55px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    
+
+}
